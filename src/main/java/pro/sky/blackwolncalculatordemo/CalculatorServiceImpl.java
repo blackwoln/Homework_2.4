@@ -4,27 +4,22 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
-    public String greeting() {
-        return "Добро пожаловать в калькулятор";
+
+    public int additionNumbers( int num1, int num2) {
+        return num1 + num2;
     }
 
-    public String additionNumbers( int num1, int num2) {
-        int sum = num1 + num2;
-        return num1 + " + " + num2 + " = " + sum;
+    public int subtractionNumbers (int num1, int num2) {
+
+        return num1 - num2;
     }
 
-    public String subtractionNumbers (int num1, int num2) {
-        int sum = num1 - num2;
-        return num1 + " - " + num2 + " = " + sum;
+    public int multiplicationNumbers (int num1, int num2) {
+
+        return num1 * num2;
     }
 
-    public String multiplicationNumbers (int num1, int num2) {
-        int sum = num1 * num2;
-        return num1 + " * " + num2 + " = " + sum;
-    }
-
-    public String divisionNumbers (int num1, int num2) {
-        int sum = num1 / num2;
-        return num1 + " / " + num2 + " = " + sum;
+    public int divisionNumbers (int num1, int num2) {
+        return num1 / num2;
     }
 }
